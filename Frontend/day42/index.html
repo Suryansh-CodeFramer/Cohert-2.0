@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px 60px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+        font-size: 60px;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    button {
+        padding: 12px 25px;
+        margin: 10px;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    #inc {
+        background-color: #00c9a7;
+        color: white;
+    }
+
+    #dec {
+        background-color: #ff4d6d;
+        color: white;
+    }
+
+    button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    button:active {
+        transform: scale(0.95);
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>0</h2>
+        <button id="inc">Increase</button>
+        <button id="dec">Decrease</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
